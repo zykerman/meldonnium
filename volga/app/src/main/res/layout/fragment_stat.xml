@@ -1,0 +1,132 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.meldonium.volga.StatFragment">
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width  = "336dp"
+        android:layout_height = "wrap_content"
+        android:layout_gravity="left"
+        android:gravity       = "center"
+        android:padding       = "10dp"
+        android:divider="@drawable/divider"
+        android:showDividers="middle"
+        android:orientation   = "horizontal">
+        <!--- box value -->
+
+        <!--- total run value -->
+        <TableRow  android:padding="2dp">
+            <TextView
+                android:id            ="@+id/tvTotalRunName"
+                android:layout_weight = "1"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:text          = "total run distance: "
+                android:layout_column="1" />
+
+            <EditText android:id      = "@+id/edtTotalRunVal"
+                android:layout_marginTop="0dp"
+                android:layout_weight = "1"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:inputType="numberDecimal"
+                android:background="@drawable/border"
+                android:enabled="false"
+                android:focusable="false"
+                android:layout_column="2" />
+            <TextView
+                android:id            ="@+id/tvTotalRunUnits"
+                android:layout_marginTop="0dp"
+                android:layout_weight = "1"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:text          = " km"
+                android:layout_column="3" />
+        </TableRow>
+        <!--- total swim value -->
+        <TableRow  android:padding="2dp">
+            <TextView
+                android:id            ="@+id/tvTotalSwimName"
+                android:layout_marginTop="0dp"
+                android:layout_weight = "1"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:text          = "swim distance: "
+                android:layout_column="1" />
+            <EditText android:id      = "@+id/edtTotalSwimVal"
+                android:layout_marginTop="0dp"
+                android:layout_weight = "1"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:inputType="numberDecimal"
+                android:background="@drawable/border"
+                android:focusable="false"
+                android:enabled="false"
+                android:layout_column="2" />
+            <TextView
+                android:id            ="@+id/tvTotalSwimUnits"
+                android:layout_marginTop="0dp"
+                android:layout_weight = "1"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:text          = " m"
+                android:layout_column="3" />
+        </TableRow>
+        <!--- total weight value -->
+        <TableRow  android:padding="2dp">
+            <TextView
+                android:id            ="@+id/tvAverageWeightName"
+                android:layout_marginTop="0dp"
+                android:layout_weight = "1"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:text          = "average weight: "
+                android:layout_column="1" />
+            <EditText android:id      = "@+id/edtAverageWeightVal"
+                android:layout_marginTop="0dp"
+                android:layout_weight = "1"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:background="@drawable/border"
+                android:enabled="false"
+                android:focusable="false"
+                android:inputType="numberDecimal"
+                android:layout_column="2" />
+            <TextView
+                android:id            ="@+id/tvAverageWeightUnits"
+                android:layout_marginTop="0dp"
+                android:layout_weight = "1"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:text          = " kg"
+                android:layout_column="3" />
+        </TableRow>
+        <TableRow  android:padding="2dp">
+            <TextView
+                android:id            ="@+id/tvsplit"
+                android:layout_marginTop="0dp"
+                android:layout_weight = "1"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:text          = "Welcome to Nizhny Novgorod!"
+                android:layout_column="1" />
+        </TableRow>
+
+    </TableLayout>
+    <TableRow  android:padding="2dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/nizhny_r" />
+        <TextView
+            android:id            ="@+id/tvNizhny"
+            android:layout_marginTop="0dp"
+            android:layout_weight = "1"
+            android:layout_width  = "match_parent"
+            android:layout_height = "wrap_content"
+            android:text          = "Made in Nizhny Novgorod 2016"
+            />
+    </TableRow>
+
+</TableLayout>

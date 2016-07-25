@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+
+    android:background="@android:color/transparent"
+    android:weightSum="1"
+    android:orientation="vertical">
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width  = "336dp"
+        android:layout_height = "wrap_content"
+        android:layout_gravity="left"
+        android:gravity       = "center"
+        android:padding       = "10dp"
+        android:divider="@drawable/divider"
+        android:showDividers="middle"
+        android:orientation   = "horizontal">
+        <!--- date value -->
+        <TableRow android:padding="2dp">
+            <TextView
+                android:id            ="@+id/tvDateName"
+                android:layout_marginTop="0dp"
+                android:layout_weight = "1"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:text          = "date: "
+                android:layout_column="1" />
+            <TextView android:id      = "@+id/tvDateVal"
+                android:layout_marginTop="0dp"
+                android:layout_weight = "1"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:background="@drawable/border"
+                android:layout_column="2"
+                android:focusable="false"
+                android:enabled="true" />
+            <TextView
+                android:id            ="@+id/tvDatePad"
+                android:layout_marginTop="0dp"
+                android:layout_weight = "1"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:text          = " "
+                android:layout_column="3" />
+        </TableRow>
+        <!--- box value -->
+        <TableRow android:padding="2dp">
+              <TextView
+                  android:id            ="@+id/tvBoxName"
+                  android:layout_marginTop="0dp"
+                  android:layout_weight = "1"
+                  android:layout_width  = "match_parent"
+                  android:layout_height = "wrap_content"
+                  android:text          = "box: "
+                  android:layout_column="1" />
+              <TextView android:id      = "@+id/tvBoxVal"
+                  android:layout_marginTop="0dp"
+                  android:layout_weight = "1"
+                  android:layout_width  = "match_parent"
+                  android:layout_height = "wrap_content"
+                  android:background="@drawable/border"
+                  android:layout_column="2"
+                  android:enabled="false" />
+            <TextView
+                android:id            ="@+id/tvBoxUnits"
+                android:layout_marginTop="0dp"
+                android:layout_weight = "1"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:text          = " "
+                android:layout_column="3" />
+        </TableRow>
+        <!--- run value -->
+        <TableRow  android:padding="2dp">
+              <TextView
+                  android:id            ="@+id/tvRunName"
+                  android:layout_weight = "1"
+                  android:layout_width  = "match_parent"
+                  android:layout_height = "wrap_content"
+                  android:text          = "run distance: "
+                  android:layout_column="1" />
+
+            <EditText android:id      = "@+id/edtRunVal"
+                  android:layout_marginTop="0dp"
+                  android:layout_weight = "1"
+                  android:layout_width  = "match_parent"
+                  android:layout_height = "wrap_content"
+                  android:inputType="number"
+                  android:background="@drawable/border"
+                  android:layout_column="2" />
+            <TextView
+                android:id            ="@+id/tvRunUnits"
+                android:layout_marginTop="0dp"
+                android:layout_weight = "1"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:text          = " km"
+                android:layout_column="3" />
+        </TableRow>
+        <!--- swim value -->
+        <TableRow  android:padding="2dp">
+              <TextView
+                  android:id            ="@+id/tvSwimName"
+                  android:layout_marginTop="0dp"
+                  android:layout_weight = "1"
+                  android:layout_width  = "match_parent"
+                  android:layout_height = "wrap_content"
+                  android:text          = "swim distance: "
+                  android:layout_column="1" />
+              <EditText android:id      = "@+id/edtSwimVal"
+                  android:layout_marginTop="0dp"
+                  android:layout_weight = "1"
+                  android:layout_width  = "match_parent"
+                  android:layout_height = "wrap_content"
+                  android:inputType="number"
+                  android:background="@drawable/border"
+                  android:layout_column="2" />
+              <TextView
+                android:id            ="@+id/tvSwimUnits"
+                android:layout_marginTop="0dp"
+                android:layout_weight = "1"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:text          = " m"
+                android:layout_column="3" />
+        </TableRow>
+        <!--- lift value -->
+        <TableRow  android:padding="2dp">
+            <TextView
+                android:id            ="@+id/tvLiftName"
+                android:layout_marginTop="0dp"
+                android:layout_weight = "1"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:text          = "lift weight: "
+                android:layout_column="1" />
+            <EditText android:id      = "@+id/edtLiftVal"
+                android:layout_marginTop="0dp"
+                android:layout_weight = "1"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:background="@drawable/border"
+                android:inputType="number"
+                android:layout_column="2" />
+            <TextView
+                android:id            ="@+id/tvLiftUnits"
+                android:layout_marginTop="0dp"
+                android:layout_weight = "1"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:text          = " kg"
+                android:layout_column="3" />
+        </TableRow>
+        <!--- pull value -->
+        <TableRow
+
+            android:padding="2dp">
+              <TextView
+                  android:id            ="@+id/tvPullName"
+                  android:layout_marginTop="0dp"
+                  android:layout_weight = "1"
+                  android:layout_width  = "match_parent"
+                  android:layout_height = "wrap_content"
+                  android:text          = "pull: "
+                  android:layout_column="1" />
+              <EditText android:id      = "@+id/edtPullVal"
+                  android:layout_marginTop="0dp"
+                  android:layout_weight = "1"
+                  android:layout_width  = "match_parent"
+                  android:layout_height = "wrap_content"
+                  android:background="@drawable/border"
+                  android:inputType="number"
+                  android:layout_column="2" />
+            <TextView
+                android:id            ="@+id/tvPullUnits"
+                android:layout_marginTop="0dp"
+                android:layout_weight = "1"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:text          = " X"
+                android:layout_column="3" />
+
+        </TableRow>
+        <!--- own weight value -->
+        <TableRow  android:padding="2dp">
+
+            <TextView
+                android:id            ="@+id/tvOwnWeightName"
+                android:layout_marginTop="0dp"
+                android:layout_weight = "1"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:text          = "your weight: "
+                android:layout_column="1" />
+
+            <EditText android:id      = "@+id/edtOwnWeightVal"
+                  android:layout_marginTop="0dp"
+                  android:layout_weight = "1"
+                  android:layout_width  = "match_parent"
+                  android:layout_height = "wrap_content"
+                  android:background="@drawable/border"
+                  android:inputType="number"
+                  android:layout_column="2" />
+            <TextView
+                android:id            ="@+id/tvOwnWeightUnits"
+                android:layout_marginTop="0dp"
+                android:layout_weight = "1"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:text          = " kg"
+                android:layout_column="3" />
+        </TableRow>
+        <!--- own note value -->
+        <TableRow  android:padding="2dp">
+            <TextView
+                android:id            ="@+id/tvNoteName"
+                android:layout_marginTop="0dp"
+                android:layout_weight = "0.3"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:text          = "note: "
+                android:layout_column="1"/>
+
+            <EditText android:id      = "@+id/edtNoteVal"
+                android:layout_marginTop="0dp"
+                android:layout_weight = "0.6"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:background="@drawable/border"
+                android:inputType="textNoSuggestions"
+                android:layout_column="1" />
+            <TextView
+                android:id            ="@+id/tvNoteUnits"
+                android:layout_marginTop="0dp"
+                android:layout_weight = "0.001"
+                android:layout_width  = "match_parent"
+                android:layout_height = "wrap_content"
+                android:text          = " "
+                android:layout_column="2" />
+        </TableRow>
+
+    </TableLayout>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:padding="10dp"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:layout_gravity="left"
+        android:layout_weight="0.5" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_gravity="right"
+        android:layout_weight="0.5" />
+
+</LinearLayout>
+
+
+</LinearLayout>
